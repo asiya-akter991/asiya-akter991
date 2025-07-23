@@ -1,4 +1,6 @@
-
+![logo](<img width="225" height="180" alt="image" src="https://github.com/user-attachments/assets/cc1de4f6-9dc1-4940-af09-0e37bc8e82d0" />
+)
+)
 
 <h1 align="center">Hi 👋, I'm Asiya Akter</h1>
 <h3 align="center">A passionate ui/ux designer from Bangladesh</h3>
