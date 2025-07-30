@@ -7,16 +7,16 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4; /* Light gray background for clean look */
-  color: #333333; /* Main text color */
+  background-color: #f4f4f4;
+  color: #333333;
   line-height: 1.9;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Header */
 header {
-  background-color: #1a1a2e; /* Dark navy for professional feel */
-  color: white;
+  background-color: #1a1a2e;
+  color: #ffffff;
   text-align: center;
   padding: 3rem 1rem;
 }
@@ -24,32 +24,37 @@ header {
 header h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  opacity: 0.9;
 }
 
 /* Main Area */
 main {
   padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* Sections */
+/* Generic Section Style */
 section {
-  background-color: #ffffff; /* White background for content sections */
+  background-color: #ffffff;
   padding: 2rem;
   margin-bottom: 3rem;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* Section Headings */
 h2 {
-  color: #e94560; /* Accent color */
+  color: #e94560;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+  font-weight: 600;
 }
 
 /* About Section */
@@ -62,44 +67,66 @@ h2 {
 }
 
 .profile-pic {
-  width: 280px;
+  width: 260px;
   border-radius: 20px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); /* Soft image shadow */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
+/* Paragraph Styling Inside About */
 .info p {
   font-size: 1.15rem;
+  line-height: 1.8;
 }
 
 /* Education Section */
 .education ul {
   list-style-type: square;
-  padding-left: 1.5rem;
-  font-size: 1.15rem;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-/* Gallery Image */
-.gallery-pic {
-  width: 100%;
-  max-width: 500px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 15px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+/* Hobbies Section */
+.hobbies p {
+  font-size: 1.15rem;
+  text-align: center;
+  line-height: 1.8;
 }
 
 /* Contact Section */
 .contact p {
   margin: 0.5rem 0;
   font-size: 1.15rem;
+  text-align: center;
 }
 
 /* Links */
 a {
-  color: #e94560; /* Accent link color */
+  color: #e94560;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+
+  .profile-pic {
+    width: 200px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
 }
